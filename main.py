@@ -88,7 +88,7 @@ def main():
 
             running = run_action(intent, text)
 
-    except KeyboardInterrupt:
+    except (KeyboardInterrupt, EOFError):
         print("\nGoodbye!")
 
 
