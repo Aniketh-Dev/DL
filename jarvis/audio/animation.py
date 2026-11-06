@@ -38,7 +38,10 @@ class ListeningAnimation:
                     curr_sample = int(elapsed * self.sample_rate)
                     chunk = self.audio_buffer[max(0, curr_sample - 800):curr_sample]
                     if len(chunk) > 0:
-                        rms = float(np.sqrt(np.mean(chunk**2)))
+                        chunk_f64 = np.asarray(chunk, dtype=np.float64)
+                        rms = float(np.sqrt(np.mean(np.square(chunk_f64))))
+                        if np.isnan(rms):
+                            rms = 0.0
 
                 # Voice boost scales wave height when user speaks
                 voice_boost = min(1.0, rms * 18.0)
