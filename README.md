@@ -117,7 +117,13 @@ pip install -r requirements.txt
 
 ## 🖥️ Usage
 
-Run the assistant with either command:
+### Quick Start (Windows One-Click Launcher)
+Simply double-click **`run_jarvis.bat`** in File Explorer! It automatically checks Python, activates your virtual environment, verifies dependencies, and starts JARVIS.
+
+---
+
+### Command Line
+You can also run directly from any terminal:
 
 ```bash
 python main.py
