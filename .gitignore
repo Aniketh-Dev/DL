@@ -52,6 +52,8 @@ desktop.ini
 # Output results (keep directory via .gitkeep)
 results/*.png
 !results/.gitkeep
+!results/architecture_diagram.png
+!results/jarvis_architecture.jpg
 
 # Model checkpoints & cache
 *.pth
