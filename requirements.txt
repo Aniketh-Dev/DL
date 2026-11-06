@@ -1,0 +1,14 @@
+# Core Deep Learning & NLP
+torch>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.2.0
+
+# Speech Recognition (ASR) & Audio
+faster-whisper>=1.0.0
+sounddevice>=0.4.6
+
+# Text to Speech (TTS)
+pyttsx3>=2.90
+
+# Visualization & Metrics
+matplotlib>=3.7.0
